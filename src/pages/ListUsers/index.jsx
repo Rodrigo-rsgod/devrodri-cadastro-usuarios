@@ -6,7 +6,7 @@ import TopBackground from '../../components/TopBackground';
 
 import Trash from '../../assets/trash.svg';
 
-import { Container, ContainerUsers, CardUsers, Title, TrashIcon, AvatarUser, } from './styles'
+import { Container, ContainerUsers, CardUsers, Title, TrashIcon, AvatarUser,BackButton } from './styles'
 
 function ListUsers() {
   const navigate = useNavigate();
@@ -48,7 +48,7 @@ function ListUsers() {
 
       </ContainerUsers>
 
-      <Button type="button" onClick={() => navigate(-1)}>Voltar</Button>
+      <BackButton type="button" onClick={() => navigate('/')}>Voltar</BackButton>
 
 
     </Container>
